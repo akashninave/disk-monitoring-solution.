@@ -1,0 +1,184 @@
+all:
+  children:
+    client1_windows:
+      hosts:
+        client1-vm1:
+          ansible_host: 10.0.1.1
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client1-vm2:
+          ansible_host: 10.0.1.2
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client1-vm3:
+          ansible_host: 10.0.1.3
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    client2_linux:
+      hosts:
+        client2-vm1:
+          ansible_host: 10.1.1.1
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client2-vm2:
+          ansible_host: 10.1.1.2
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client2-vm3:
+          ansible_host: 10.1.1.3
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client2-vm4:
+          ansible_host: 10.1.1.4
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    client3_amazon_linux:
+      hosts:
+        client3-vm1:
+          ansible_host: 10.2.1.1
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client3-vm2:
+          ansible_host: 10.2.1.2
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client3-vm3:
+          ansible_host: 10.2.1.3
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client3-vm4:
+          ansible_host: 10.2.1.4
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client3-vm5:
+          ansible_host: 10.2.1.5
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    client4_rhel:
+      hosts:
+        client4-vm1:
+          ansible_host: 10.3.1.1
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client4-vm2:
+          ansible_host: 10.3.1.2
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client4-vm3:
+          ansible_host: 10.3.1.3
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    client5_windows:
+      hosts:
+        client5-vm1:
+          ansible_host: 10.4.1.1
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client5-vm2:
+          ansible_host: 10.4.1.2
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client5-vm3:
+          ansible_host: 10.4.1.3
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client5-vm4:
+          ansible_host: 10.4.1.4
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    client6_ubuntu:
+      hosts:
+        client6-vm1:
+          ansible_host: 10.5.1.1
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client6-vm2:
+          ansible_host: 10.5.1.2
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client6-vm3:
+          ansible_host: 10.5.1.3
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client6-vm4:
+          ansible_host: 10.5.1.4
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client6-vm5:
+          ansible_host: 10.5.1.5
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client6-vm6:
+          ansible_host: 10.5.1.6
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    client7_debian:
+      hosts:
+        client7-vm1:
+          ansible_host: 10.6.1.1
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client7-vm2:
+          ansible_host: 10.6.1.2
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client7-vm3:
+          ansible_host: 10.6.1.3
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client7-vm4:
+          ansible_host: 10.6.1.4
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    client8_centos:
+      hosts:
+        client8-vm1:
+          ansible_host: 10.7.1.1
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client8-vm2:
+          ansible_host: 10.7.1.2
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client8-vm3:
+          ansible_host: 10.7.1.3
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client8-vm4:
+          ansible_host: 10.7.1.4
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client8-vm5:
+          ansible_host: 10.7.1.5
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client8-vm6:
+          ansible_host: 10.7.1.6
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client8-vm7:
+          ansible_host: 10.7.1.7
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+
+    client9_windows:
+      hosts:
+        client9-vm1:
+          ansible_host: 10.8.1.1
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client9-vm2:
+          ansible_host: 10.8.1.2
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa
+        client9-vm3:
+          ansible_host: 10.8.1.3
+          ansible_user: akashninave
+          ansible_ssh_private_key_file: ~/.ssh/id_rsa

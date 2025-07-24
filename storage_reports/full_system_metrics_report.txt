@@ -1,0 +1,159 @@
+### Client 1: Windows Server 2019 (AWS)
+client1-vm1 (10.0.1.1)
+- CPU: Intel Xeon E5-2676 v3, 4 cores @ 2.4 GHz
+- CPU Usage: 35% avg (5 mins)
+- RAM: 16 GB total, 9.2 GB used, 6.8 GB free
+- Disk (C:): 500 GB total, 320 GB used, 180 GB free
+- Network: eth0 - 200 Mbps TX, 180 Mbps RX
+- Uptime: 21 days, 4 hours
+- OS Version: Windows Server 2019 Standard
+- Active users: 3 (akash, admin, svcuser)
+
+client1-vm2 (10.0.1.2)
+- CPU: Intel Xeon E5-2676 v3, 4 cores @ 2.4 GHz
+- CPU Usage: 48% avg (5 mins)
+- RAM: 32 GB total, 22.5 GB used, 9.5 GB free
+- Disk (C:): 750 GB total, 550 GB used, 200 GB free
+- Network: eth0 - 300 Mbps TX, 280 Mbps RX
+- Uptime: 34 days, 6 hours
+- OS Version: Windows Server 2019 Datacenter
+- Active users: 2 (akash, svcuser)
+
+client1-vm3 (10.0.1.3)
+- CPU: Intel Xeon E5-2676 v3, 4 cores @ 2.4 GHz
+- CPU Usage: 20% avg (5 mins)
+- RAM: 8 GB total, 5.3 GB used, 2.7 GB free
+- Disk (C:): 300 GB total, 250 GB used, 50 GB free
+- Network: eth0 - 150 Mbps TX, 140 Mbps RX
+- Uptime: 10 days, 12 hours
+- OS Version: Windows Server 2019 Standard
+- Active users: 1 (akash)
+
+### Client 2: Ubuntu 20.04 LTS (Azure)
+client2-vm1 (10.1.1.1)
+- CPU: Intel Xeon 6 cores @ 2.8 GHz
+- CPU Usage: 25% avg (5 mins)
+- RAM: 16 GB total, 8 GB used, 8 GB free
+- Disk: /dev/sda1 - 250G total, 200G used, 50G free, 80% used
+- Network: eth0 - 500 Mbps TX, 480 Mbps RX
+- Uptime: 45 days
+- Kernel: 5.4.0-104-generic
+- Logged in users: 4
+
+client2-vm2 (10.1.1.2)
+- CPU: Intel Xeon 6 cores @ 2.8 GHz
+- CPU Usage: 33% avg (5 mins)
+- RAM: 16 GB total, 9.6 GB used, 6.4 GB free
+- Disk: /dev/sda1 - 300G total, 250G used, 50G free, 83% used
+- Network: eth0 - 480 Mbps TX, 450 Mbps RX
+- Uptime: 40 days
+- Kernel: 5.4.0-104-generic
+- Logged in users: 3
+
+client2-vm3 (10.1.1.3)
+- CPU: Intel Xeon 6 cores @ 2.8 GHz
+- CPU Usage: 30% avg (5 mins)
+- RAM: 12 GB total, 9 GB used, 3 GB free
+- Disk: /dev/sda1 - 200G total, 150G used, 50G free, 75% used
+- Network: eth0 - 400 Mbps TX, 380 Mbps RX
+- Uptime: 37 days
+- Kernel: 5.4.0-104-generic
+- Logged in users: 2
+
+client2-vm4 (10.1.1.4)
+- CPU: Intel Xeon 6 cores @ 2.8 GHz
+- CPU Usage: 22% avg (5 mins)
+- RAM: 8 GB total, 5.5 GB used, 2.5 GB free
+- Disk: /dev/sda1 - 150G total, 100G used, 50G free, 66% used
+- Network: eth0 - 350 Mbps TX, 340 Mbps RX
+- Uptime: 30 days
+- Kernel: 5.4.0-104-generic
+- Logged in users: 1
+
+### Client 3: Amazon Linux 2 (AWS)
+client3-vm1 (10.2.1.1)
+- CPU: Intel Xeon 8 cores @ 2.3 GHz
+- CPU Usage: 20% avg
+- RAM: 8 GB total, 3.5 GB used, 4.5 GB free
+- Disk: /dev/nvme0n1p1 - 400G total, 350G used, 50G free, 87% used
+- Network: eth0 - 200 Mbps TX, 190 Mbps RX
+- Uptime: 28 days
+- Kernel: 4.14.225-169.362.amzn2.x86_64
+- Logged in users: 2
+
+client3-vm5 (10.2.1.5)
+- CPU: Intel Xeon 8 cores @ 2.3 GHz
+- CPU Usage: 30% avg
+- RAM: 16 GB total, 11 GB used, 5 GB free
+- Disk: /dev/nvme0n1p1 - 700G total, 650G used, 50G free, 93% used
+- Network: eth0 - 300 Mbps TX, 280 Mbps RX
+- Uptime: 31 days
+- Kernel: 4.14.225-169.362.amzn2.x86_64
+- Logged in users: 3
+
+### Client 4: RHEL 8 (Azure)
+client4-vm1 (10.3.1.1)
+- CPU: AMD EPYC 8 cores @ 2.7 GHz
+- CPU Usage: 40% avg
+- RAM: 24 GB total, 18 GB used, 6 GB free
+- Disk: /dev/sda1 - 700G total, 550G used, 150G free, 78% used
+- Network: eth0 - 400 Mbps TX, 390 Mbps RX
+- Uptime: 50 days
+- Kernel: 4.18.0-305.el8.x86_64
+- Logged in users: 5
+
+### Client 5: Windows Server 2016 (GCP)
+client5-vm1 (10.4.1.1)
+- CPU: Intel Xeon 4 cores @ 2.2 GHz
+- CPU Usage: 45% avg
+- RAM: 12 GB total, 9 GB used, 3 GB free
+- Disk (C:): 350 GB total, 300 GB used, 50 GB free
+- Network: eth0 - 250 Mbps TX, 230 Mbps RX
+- Uptime: 25 days
+- OS Version: Windows Server 2016 Standard
+- Active users: 3
+
+### Client 6: Ubuntu 18.04 LTS (AWS)
+client6-vm1 (10.5.1.1)
+- CPU: Intel Xeon 6 cores @ 2.8 GHz
+- CPU Usage: 28% avg
+- RAM: 16 GB total, 11 GB used, 5 GB free
+- Disk: /dev/sda1 - 600G total, 550G used, 50G free, 92% used
+- Network: eth0 - 350 Mbps TX, 340 Mbps RX
+- Uptime: 30 days, 5 hours
+- Kernel: 4.15.0-142-generic
+- Logged in users: 3
+
+### Client 7: Debian 10 (Azure)
+client7-vm1 (10.6.1.1)
+- CPU: AMD Ryzen 4 cores @ 3.0 GHz
+- CPU Usage: 22% avg
+- RAM: 8 GB total, 6 GB used, 2 GB free
+- Disk: /dev/sda1 - 150G total, 120G used, 30G free, 80% used
+- Network: eth0 - 180 Mbps TX, 175 Mbps RX
+- Uptime: 40 days, 3 hours
+- Kernel: 4.19.0-18-amd64
+- Logged in users: 3
+
+### Client 8: CentOS 8 (GCP)
+client8-vm1 (10.7.1.1)
+- CPU: Intel Xeon 8 cores @ 2.6 GHz
+- CPU Usage: 50% avg
+- RAM: 32 GB total, 28 GB used, 4 GB free
+- Disk: /dev/sda1 - 900G total, 850G used, 50G free, 94% used
+- Network: eth0 - 600 Mbps TX, 590 Mbps RX
+- Uptime: 45 days, 8 hours
+- Kernel: 4.18.0-240.el8.x86_64
+- Logged in users: 6
+
+### Client 9: Windows Server 2012 (AWS)
+client9-vm1 (10.8.1.1)
+- CPU: Intel Xeon 4 cores @ 2.3 GHz
+- CPU Usage: 42% avg
+- RAM: 16 GB total, 11 GB used, 5 GB free
+- Disk (C:): 450 GB total, 350 GB used, 100 GB free
+- Network: eth0 - 200 Mbps TX, 190 Mbps RX
+- Uptime: 26 days, 5 hours
+- OS Version: Windows Server 2012 Standard
+- Active users: 4
+

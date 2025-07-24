@@ -1,0 +1,17 @@
+{
+  "GroupName": "AllowAnsibleAccess",
+  "Description": "Allow management from Ansible VM",
+  "IpPermissions": [
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 22,
+      "ToPort": 22,
+      "IpRanges": [
+        {
+          "CidrIp": "10.0.0.10/32",
+          "Description": "Ansible control VM IP"
+        }
+      ]
+    }
+  ]
+}

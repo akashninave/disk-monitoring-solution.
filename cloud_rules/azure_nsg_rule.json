@@ -1,0 +1,14 @@
+{
+  "name": "Allow_Ansible_SSH",
+  "properties": {
+    "priority": 1000,
+    "protocol": "Tcp",
+    "access": "Allow",
+    "direction": "Inbound",
+    "sourceAddressPrefix": "10.0.0.10",
+    "sourcePortRange": "*",
+    "destinationAddressPrefix": "*",
+    "destinationPortRange": "22",
+    "description": "Allow SSH from Ansible VM"
+  }
+}

@@ -1,0 +1,253 @@
+Host: client1-vm1 (IP: 10.0.1.1, CSP: aws)
+Output:
+Drive C:
+  Size: 500 GB
+  Used: 320 GB
+  Free: 180 GB
+--------------------------
+
+Host: client1-vm2 (IP: 10.0.1.2, CSP: aws)
+Output:
+Drive C:
+  Size: 750 GB
+  Used: 550 GB
+  Free: 200 GB
+--------------------------
+
+Host: client1-vm3 (IP: 10.0.1.3, CSP: aws)
+Output:
+Drive C:
+  Size: 300 GB
+  Used: 250 GB
+  Free: 50 GB
+--------------------------
+
+Host: client2-vm1 (IP: 10.1.1.1, CSP: azure)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       250G  200G   50G  80% /
+--------------------------
+
+Host: client2-vm2 (IP: 10.1.1.2, CSP: azure)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       300G  250G   50G  83% /
+--------------------------
+
+Host: client2-vm3 (IP: 10.1.1.3, CSP: azure)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       200G  150G   50G  75% /
+--------------------------
+
+Host: client2-vm4 (IP: 10.1.1.4, CSP: azure)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       150G  100G   50G  66% /
+--------------------------
+
+Host: client3-vm1 (IP: 10.2.1.1, CSP: aws)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1  400G  350G   50G  87% /
+--------------------------
+
+Host: client3-vm2 (IP: 10.2.1.2, CSP: aws)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1  600G  550G   50G  91% /
+--------------------------
+
+Host: client3-vm3 (IP: 10.2.1.3, CSP: aws)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1  350G  300G   50G  85% /
+--------------------------
+
+Host: client3-vm4 (IP: 10.2.1.4, CSP: aws)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1  450G  400G   50G  88% /
+--------------------------
+
+Host: client3-vm5 (IP: 10.2.1.5, CSP: aws)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1  700G  650G   50G  93% /
+--------------------------
+
+Host: client4-vm1 (IP: 10.3.1.1, CSP: azure)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       700G  550G  150G  78% /
+--------------------------
+
+Host: client4-vm2 (IP: 10.3.1.2, CSP: azure)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       500G  400G  100G  80% /
+--------------------------
+
+Host: client4-vm3 (IP: 10.3.1.3, CSP: azure)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       450G  350G  100G  78% /
+--------------------------
+
+Host: client5-vm1 (IP: 10.4.1.1, CSP: gcp)
+Output:
+Drive C:
+  Size: 350 GB
+  Used: 300 GB
+  Free: 50 GB
+--------------------------
+
+Host: client5-vm2 (IP: 10.4.1.2, CSP: gcp)
+Output:
+Drive C:
+  Size: 300 GB
+  Used: 250 GB
+  Free: 50 GB
+--------------------------
+
+Host: client5-vm3 (IP: 10.4.1.3, CSP: gcp)
+Output:
+Drive C:
+  Size: 400 GB
+  Used: 350 GB
+  Free: 50 GB
+--------------------------
+
+Host: client5-vm4 (IP: 10.4.1.4, CSP: gcp)
+Output:
+Drive C:
+  Size: 250 GB
+  Used: 200 GB
+  Free: 50 GB
+--------------------------
+
+Host: client6-vm1 (IP: 10.5.1.1, CSP: aws)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       600G  550G   50G  92% /
+--------------------------
+
+Host: client6-vm2 (IP: 10.5.1.2, CSP: aws)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       550G  500G   50G  90% /
+--------------------------
+
+Host: client6-vm3 (IP: 10.5.1.3, CSP: aws)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       300G  250G   50G  83% /
+--------------------------
+
+Host: client6-vm4 (IP: 10.5.1.4, CSP: aws)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       250G  200G   50G  80% /
+--------------------------
+
+Host: client6-vm5 (IP: 10.5.1.5, CSP: aws)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       400G  350G   50G  87% /
+--------------------------
+
+Host: client6-vm6 (IP: 10.5.1.6, CSP: aws)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       150G  100G   50G  67% /
+--------------------------
+
+Host: client7-vm1 (IP: 10.6.1.1, CSP: azure)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       150G  120G   30G  80% /
+--------------------------
+
+Host: client7-vm2 (IP: 10.6.1.2, CSP: azure)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       200G  150G   50G  75% /
+--------------------------
+
+Host: client7-vm3 (IP: 10.6.1.3, CSP: azure)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       250G  220G   30G  88% /
+--------------------------
+
+Host: client7-vm4 (IP: 10.6.1.4, CSP: azure)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       100G   70G   30G  70% /
+--------------------------
+
+Host: client8-vm1 (IP: 10.7.1.1, CSP: gcp)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       900G  850G   50G  94% /
+--------------------------
+
+Host: client8-vm2 (IP: 10.7.1.2, CSP: gcp)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       800G  700G  100G  88% /
+--------------------------
+
+Host: client8-vm3 (IP: 10.7.1.3, CSP: gcp)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       750G  650G  100G  86% /
+--------------------------
+
+Host: client8-vm4 (IP: 10.7.1.4, CSP: gcp)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       600G  500G  100G  83% /
+--------------------------
+
+Host: client8-vm5 (IP: 10.7.1.5, CSP: gcp)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       550G  450G  100G  82% /
+--------------------------
+
+Host: client8-vm6 (IP: 10.7.1.6, CSP: gcp)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       400G  350G   50G  87% /
+--------------------------
+
+Host: client8-vm7 (IP: 10.7.1.7, CSP: gcp)
+Output:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       300G  250G   50G  83% /
+--------------------------
+
+Host: client9-vm1 (IP: 10.8.1.1, CSP: aws)
+Output:
+Drive C:
+  Size: 450 GB
+  Used: 350 GB
+  Free: 100 GB
+--------------------------
+
+Host: client9-vm2 (IP: 10.8.1.2, CSP: aws)
+Output:
+Drive C:
+  Size: 500 GB
+  Used: 450 GB
+  Free: 50 GB
+--------------------------
+
+Host: client9-vm3 (IP: 10.8.1.3, CSP: aws)
+Output:
+Drive C:
+  Size: 400 GB
+  Used: 300 GB
+  Free: 100 GB
+--------------------------

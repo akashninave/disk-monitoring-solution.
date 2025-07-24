@@ -1,0 +1,68 @@
+---
+- name: Collect storage info from Linux client VMs (Multi-cloud aware)
+  hosts:
+    - client2_linux
+    - client3_amazon_linux
+    - client4_rhel
+    - client6_ubuntu
+    - client7_debian
+    - client8_centos
+  gather_facts: yes
+  tasks:
+    - name: Copy Linux storage info script
+      copy:
+        src: "/Users/akashninave/Akash_Drive/JOB HUNTER/LUCIDITY/get-storage-info-username.sh"
+        dest: "/tmp/get-storage-info.sh"
+        mode: '0755'
+
+    - name: Run Linux storage info script
+      shell: "/tmp/get-storage-info.sh"
+      register: linux_storage_output
+      ignore_errors: yes
+
+    - name: Save Linux output locally on control node
+      local_action:
+        module: copy
+        content: |
+          Host: {{ inventory_hostname }} (IP: {{ ansible_host }}, CSP: {{ hostvars[inventory_hostname]['csp'] | default('unknown') }})
+          Output:
+          {{ linux_storage_output.stdout }}
+          --------------------------
+        dest: "/Users/akashninave/Akash_Drive/JOB HUNTER/LUCIDITY/storage_reports/{{ inventory_hostname }}_storage_info.txt"
+
+    - name: Clean up Linux remote script
+      file:
+        path: "/tmp/get-storage-info.sh"
+        state: absent
+
+- name: Collect storage info from Windows client VMs (Multi-cloud aware)
+  hosts:
+    - client1_windows
+    - client5_windows
+    - client9_windows
+  gather_facts: yes
+  tasks:
+    - name: Copy Windows PowerShell storage script
+      win_copy:
+        src: "/Users/akashninave/Akash_Drive/JOB HUNTER/LUCIDITY/get-storage-info-username.ps1"
+        dest: "C:\\temp\\get-storage-info.ps1"
+
+    - name: Run Windows PowerShell storage script
+      win_shell: "powershell.exe -ExecutionPolicy Bypass -File C:\\temp\\get-storage-info.ps1"
+      register: windows_storage_output
+      ignore_errors: yes
+
+    - name: Save Windows output locally on control node
+      local_action:
+        module: copy
+        content: |
+          Host: {{ inventory_hostname }} (IP: {{ ansible_host }}, CSP: {{ hostvars[inventory_hostname]['csp'] | default('unknown') }})
+          Output:
+          {{ windows_storage_output.stdout }}
+          --------------------------
+        dest: "/Users/akashninave/Akash_Drive/JOB HUNTER/LUCIDITY/storage_reports/{{ inventory_hostname }}_storage_info.txt"
+
+    - name: Clean up Windows remote script
+      win_file:
+        path: "C:\\temp\\get-storage-info.ps1"
+        state: absent
